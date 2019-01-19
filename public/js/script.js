@@ -53,3 +53,7 @@ socket.on('bot reply', function(replyText) {
   if(replyText == '') replyText = '(No answer...)';
   outputBot.textContent = replyText;
 });
+
+socket.on('play-audio',function(){
+  window.location.href = "http://localhost:5000/audio";
+})
